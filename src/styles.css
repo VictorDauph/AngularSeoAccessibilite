@@ -1,1 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+/* Smooth scroll for anchors */
+html {
+    scroll-behavior: smooth;
+}
+
+/*Menu de navigation accessibilité*/
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0072ff;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Centrer les éléments de la navbar */
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    /* Ajouter un effet de zoom au survol */
+}
+
+/* Ajout d'une transition à la navbar pour un effet fluide lors du survol */
+.navbar {
+    transition: background-color 0.4s ease;
+}
+
+/* Style de la navbar lorsqu'elle est en survol */
+.navbar:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    animation: slideIn 0.6s ease-out;
+}
+
+/* Animation pour faire apparaître le texte */
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}

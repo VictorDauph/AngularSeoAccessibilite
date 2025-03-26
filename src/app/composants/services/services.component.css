@@ -1,0 +1,93 @@
+/* Style général pour la page des services */
+.services-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header */
+.page-header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    color: #007bff;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Liste des services */
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 30px;
+    margin: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    color: #0072ff;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Section Appel à l'action */
+.cta {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 60px 20px;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e74c3c;
+}

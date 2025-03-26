@@ -1,0 +1,107 @@
+/* Style général */
+.projects-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Titre de la page */
+.page-header {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #0072ff;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Liste des projets */
+.projects-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    color: #0072ff;
+    margin: 15px 0;
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.view-project-button {
+    text-decoration: none;
+    color: #0072ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.view-project-button:hover {
+    color: #0056b3;
+}
+
+/* Section Appel à l'action */
+.cta {
+    text-align: center;
+    background-color: #0072ff;
+    color: white;
+    padding: 60px 20px;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e74c3c;
+}

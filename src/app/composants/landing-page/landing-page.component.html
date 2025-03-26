@@ -1,0 +1,51 @@
+<!-- Menu de navigation -->
+<nav class="navbar">
+    <ul>
+        <li><a [routerLink]="['/']" fragment="intro" class="nav-link">Introduction</a></li>
+        <li><a [routerLink]="['/']" fragment="services" class="nav-link">Nos Services</a></li>
+        <li><a [routerLink]="['/']" fragment="testimonials" class="nav-link">Témoignages</a></li>
+        <li><a [routerLink]="['/']" fragment="contact" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+<div class="container landing-container">
+
+    <!-- Section En-tête -->
+    <section class="hero" id="intro">
+        <div class="hero-content">
+            <h1>Bienvenue sur notre site</h1>
+            <p>Votre partenaire idéal pour un développement web de qualité.</p>
+            <a routerLink="/services" class="cta-button">Découvrir nos services</a>
+        </div>
+    </section>
+
+    <!-- Section Nos Services -->
+    <section class="services" id="services">
+        <h2>Nos services</h2>
+        <div class="service-card">
+            <h3>Développement Web</h3>
+            <p>Des sites web modernes, performants et adaptés à vos besoins.</p>
+        </div>
+        <div class="service-card">
+            <h3>Consulting</h3>
+            <p>Des solutions sur mesure pour optimiser votre présence en ligne.</p>
+        </div>
+        <div class="service-card">
+            <h3>Maintenance</h3>
+            <p>Assurez-vous que votre site reste à jour et fonctionnel.</p>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="testimonials" id="testimonials">
+        <h2>Témoignages</h2>
+        <p>"Un service exceptionnel, vraiment à l'écoute de nos besoins." - Client satisfait</p>
+        <p>"L'équipe a livré un projet de qualité en temps et en heure." - Autre client satisfait</p>
+    </section>
+
+    <!-- Section Appel à l'action -->
+    <section class="call-to-action" id="contact">
+        <h2>Prêt à commencer ?</h2>
+        <p>Contactez-nous pour discuter de vos besoins en développement web !</p>
+        <a routerLink="/contact" class="cta-button">Contactez-nous</a>
+    </section>
+</div>

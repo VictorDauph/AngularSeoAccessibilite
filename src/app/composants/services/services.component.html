@@ -1,0 +1,42 @@
+<!-- Menu de navigation -->
+<nav class="navbar">
+    <ul>
+        <li><a [routerLink]="[]" fragment="services" class="nav-link">Nos Services</a></li>
+        <li><a [routerLink]="[]" fragment="contact" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+<div class="container services-container">
+    <!-- Titre de la page -->
+    <section class="page-header" id="services">
+        <h1>Nos Services</h1>
+        <p>Découvrez les solutions que nous proposons pour vous aider à réussir.</p>
+    </section>
+
+    <!-- Section de services -->
+    <section class="services-list">
+        <div class="service-card">
+            <img src="https://img.icons8.com/?size=100&id=wWh3KNXLFm0y&format=png&color=000000" alt="Web Development" />
+            <h3>Développement Web</h3>
+            <p>Des sites web modernes et responsives adaptés à vos besoins, en utilisant les dernières technologies.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="https://img.icons8.com/?size=100&id=6470&format=png&color=000000" alt="SEO Optimization" />
+            <h3>Optimisation SEO</h3>
+            <p>Améliorez votre visibilité en ligne avec nos services de référencement adaptés à vos objectifs.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="https://img.icons8.com/ios/452/support.png" alt="Support" />
+            <h3>Maintenance et Support</h3>
+            <p>Nous vous accompagnons dans la gestion et la maintenance continue de vos sites et applications.</p>
+        </div>
+    </section>
+
+    <!-- Section Appel à l'action -->
+    <section class="cta" id="contact">
+        <h2>Prêt à discuter de votre projet ?</h2>
+        <p>Nous sommes prêts à vous aider à donner vie à vos idées. Contactez-nous pour une consultation gratuite.</p>
+        <a routerLink="/contact" class="cta-button">Contactez-nous</a>
+    </section>
+</div>

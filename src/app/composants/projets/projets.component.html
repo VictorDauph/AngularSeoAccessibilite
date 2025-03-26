@@ -1,0 +1,53 @@
+<!-- Menu de navigation -->
+<nav class="navbar">
+    <ul>
+        <li><a [routerLink]="[]" fragment="projects" class="nav-link">Nos Projets</a></li>
+        <li><a [routerLink]="[]" fragment="contact" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container projects-container">
+    <!-- Titre de la page -->
+    <section class="page-header" id="projects">
+        <h1>Nos Projets</h1>
+        <p>Découvrez quelques-uns des projets sur lesquels nous avons travaillé.</p>
+    </section>
+
+    <!-- Section de projets -->
+    <section class="projects-list">
+        <!-- Projet 1 -->
+        <article tabindex="0" class="project-card">
+            <img src="/images/ecommerce.png" alt="Screenschot d'un projet e-commerce" class="project-image" />
+            <h3>Développement d'un site e-commerce</h3>
+            <p>Un site e-commerce responsive et optimisé pour l'expérience utilisateur, avec des fonctionnalités de
+                paiement sécurisé et un système de gestion de produit facile à utiliser.</p>
+            <a [routerLink]="['/projects', 'ecommerce']" class="view-project-button">Voir le projet</a>
+        </article>
+
+        <!-- Projet 2 -->
+        <article tabindex="0" class="project-card">
+            <img src="/images/trello.gif" alt="une image animée d'une scrum board sur mobile" class="project-image" />
+            <h3>Application mobile pour la gestion des tâches</h3>
+            <p>Une application mobile de gestion de projet permettant de suivre les tâches, de collaborer avec les
+                équipes et de suivre les progrès en temps réel.</p>
+            <a [routerLink]="['/projects', 'mobile-app']" class="view-project-button">Voir le projet</a>
+        </article>
+
+        <!-- Projet 3 -->
+        <article tabindex="0" class="project-card">
+            <img src="/images/msf.png" alt="Project 3" class="project-image" />
+            <h3>Refonte de site web pour une ONG</h3>
+            <p>Refonte d'un site web pour une organisation à but non lucratif, avec un design moderne, une navigation
+                intuitive et une interface adaptée aux personnes handicapées.</p>
+            <a [routerLink]="['/projects', 'ngo-website']" class="view-project-button">Voir le projet</a>
+        </article>
+    </section>
+
+    <!-- Section Appel à l'action -->
+    <section class="cta" id="contact">
+        <h2>Vous avez un projet ?</h2>
+        <p>Nous sommes là pour vous aider à transformer vos idées en réalité. Contactez-nous pour discuter de vos
+            besoins.</p>
+        <a routerLink="/contact" class="cta-button">Contactez-nous</a>
+    </section>
+</div>

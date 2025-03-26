@@ -1,0 +1,62 @@
+/* Conteneur principal de la page 404 */
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    /* Fond dégradé */
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenu du message d'erreur */
+.error-content {
+    text-align: center;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.error-title {
+    font-size: 6rem;
+    color: #dc3545;
+    margin: 0;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.error-description {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.error-details {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 2rem;
+}
+
+/* Bouton retour à l'accueil */
+.btn-home {
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-home:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Animation pour l'image et le titre */
+.error-image {
+    margin-bottom: 1.5rem;
+}
