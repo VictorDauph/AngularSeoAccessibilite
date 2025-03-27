@@ -15,9 +15,9 @@
         <!-- Nom -->
         <div class="form-group">
             <label for="name">Nom</label>
-            <input type="text" id="name" name="name" ngModel required class="form-control" #name="ngModel"
-                aria-describedby="nameError" [attr.aria-invalid]="name.invalid && name.touched" />
-            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error-message" role="alert" id="nameError">
+            <input type="text" id="name" name="name" ngModel required class="form-control" #name="ngModel" />
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error-message" role="alert"
+                aria-live="assertive">
                 <p>Le nom est requis.</p>
             </div>
         </div>
@@ -25,10 +25,9 @@
         <!-- Email -->
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" ngModel required email class="form-control" #email="ngModel"
-                aria-describedby="emailError" [attr.aria-invalid]="email.invalid && email.touched" />
+            <input type="email" id="email" name="email" ngModel required email class="form-control" #email="ngModel" />
             <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message" role="alert"
-                id="emailError">
+                aria-live="assertive" id="emailError">
                 <p *ngIf="email.errors?.['required']">L'email est requis.</p>
                 <p *ngIf="email.errors?.['email']">Veuillez entrer un email valide.</p>
             </div>
@@ -37,10 +36,10 @@
         <!-- Message -->
         <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" ngModel required rows="4" class="form-control" #message="ngModel"
-                aria-describedby="messageError" [attr.aria-invalid]="message.invalid && message.touched"></textarea>
+            <textarea id="message" name="message" ngModel required rows="4" class="form-control"
+                #message="ngModel"></textarea>
             <div *ngIf="message.invalid && (message.dirty || message.touched)" class="error-message" role="alert"
-                id="messageError">
+                aria-live="assertive" id="messageError">
                 <p>Le message est requis.</p>
             </div>
         </div>
