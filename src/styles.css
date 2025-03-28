@@ -38,12 +38,7 @@ html {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.navbar a:hover,
-.navbar a:focus {
-    background-color: #0056b3;
-    transform: scale(1.1);
-    /* Ajouter un effet de zoom au survol */
-}
+
 
 /* Ajout d'une transition à la navbar pour un effet fluide lors du survol */
 .navbar {

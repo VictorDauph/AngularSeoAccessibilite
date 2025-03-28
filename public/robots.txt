@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /projets
+
+# Optionnel : autres fichiers techniques à bloquer
+Disallow: /assets/
+Disallow: /favicon.ico
+Disallow: /ngsw-worker.js
+
+Sitemap: https://www.monsite.com/sitemap.xml

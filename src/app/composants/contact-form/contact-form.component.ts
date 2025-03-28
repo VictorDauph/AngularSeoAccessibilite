@@ -15,7 +15,7 @@ export class ContactFormComponent {
   apiError: String | null = null;
 
   onSubmit(form: any) {
-    let errorSimulation: boolean = false;
+    let errorSimulation: boolean = true;
     if (form.valid && !errorSimulation) {
       // simule le Traitement des données du formulaire, par exemple envoi au serveur
       console.log('Form Submitted!', form.value);
