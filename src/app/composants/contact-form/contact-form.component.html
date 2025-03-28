@@ -1,14 +1,4 @@
 <div class="container contact-form-container">
-    <button aria-haspopup="true" aria-expanded="false" id="menu-button">
-        Menu
-    </button>
-
-    <ul role="menu" aria-labelledby="menu-button" hidden>
-        <li role="menuitem"><a href="/profil">Profil</a></li>
-        <li role="menuitem"><a href="/parametres">Paramètres</a></li>
-        <li role="menuitem"><a href="/deconnexion">Déconnexion</a></li>
-    </ul>
-
     <h2>Contactez-nous</h2>
 
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
@@ -46,5 +36,11 @@
 
         <!-- Submit Button -->
         <button type="submit" [disabled]="contactForm.invalid" class="btn btn-primary">Envoyer</button>
+
+        <div *ngIf="apiError && (message.dirty || message.touched)" class="error-message" role="alert"
+            aria-live="assertive" id="messageError">
+            <p>{{apiError}}</p>
+        </div>
+
     </form>
 </div>

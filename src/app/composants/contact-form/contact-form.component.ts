@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
@@ -9,12 +10,19 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './contact-form.component.css'
 })
 export class ContactFormComponent {
+  constructor(private router: Router) { }
+
+  apiError: String | null = null;
+
   onSubmit(form: any) {
-    if (form.valid) {
+    let errorSimulation: boolean = false;
+    if (form.valid && !errorSimulation) {
+      // simule le Traitement des données du formulaire, par exemple envoi au serveur
       console.log('Form Submitted!', form.value);
-      // Traitement des données du formulaire, par exemple envoi au serveur
+      this.router.navigate(['/']);
     } else {
-      console.log('Form is not valid');
+      console.log('apiError');
+      this.apiError = 'Erreur lors de la soumission du formulaire';
     }
   }
 }
